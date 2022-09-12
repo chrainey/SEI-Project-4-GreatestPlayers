@@ -1,0 +1,149 @@
+[
+{
+  "model": "clubs.club",
+  "pk": 1,
+  "fields": {
+    "name": "Blackburn Rovers"
+  }
+},
+{
+  "model": "clubs.club",
+  "pk": 2,
+  "fields": {
+    "name": "Southampton"
+  }
+},
+{
+  "model": "clubs.club",
+  "pk": 3,
+  "fields": {
+    "name": "Newcastle United"
+  }
+},
+{
+  "model": "clubs.club",
+  "pk": 4,
+  "fields": {
+    "name": "Real Madrid CF"
+  }
+},
+{
+  "model": "clubs.club",
+  "pk": 5,
+  "fields": {
+    "name": "Manchester United"
+  }
+},
+{
+  "model": "clubs.club",
+  "pk": 6,
+  "fields": {
+    "name": "FC Barcelona"
+  }
+},
+{
+  "model": "clubs.club",
+  "pk": 7,
+  "fields": {
+    "name": "Napoli"
+  }
+},
+{
+  "model": "clubs.club",
+  "pk": 8,
+  "fields": {
+    "name": "AC Milan"
+  }
+},
+{
+  "model": "clubs.club",
+  "pk": 9,
+  "fields": {
+    "name": "Liverpool"
+  }
+},
+{
+  "model": "clubs.club",
+  "pk": 10,
+  "fields": {
+    "name": "Arsenal"
+  }
+},
+{
+  "model": "clubs.club",
+  "pk": 11,
+  "fields": {
+    "name": "Bayern Munich"
+  }
+},
+{
+  "model": "clubs.club",
+  "pk": 12,
+  "fields": {
+    "name": "Bordeaux"
+  }
+},
+{
+  "model": "clubs.club",
+  "pk": 13,
+  "fields": {
+    "name": "Juventus"
+  }
+},
+{
+  "model": "clubs.club",
+  "pk": 14,
+  "fields": {
+    "name": "Paris St Germain"
+  }
+},
+{
+  "model": "clubs.club",
+  "pk": 15,
+  "fields": {
+    "name": "Inter Milan"
+  }
+},
+{
+  "model": "clubs.club",
+  "pk": 16,
+  "fields": {
+    "name": "Ajax"
+  }
+},
+{
+  "model": "clubs.club",
+  "pk": 17,
+  "fields": {
+    "name": "PSV Eindhoven"
+  }
+},
+{
+  "model": "clubs.club",
+  "pk": 18,
+  "fields": {
+    "name": "Boca Juniors"
+  }
+},
+{
+  "model": "clubs.club",
+  "pk": 19,
+  "fields": {
+    "name": "Sporting Lisbon"
+  }
+},
+{
+  "model": "clubs.club",
+  "pk": 20,
+  "fields": {
+    "name": "Manchester City"
+  }
+},
+{
+  "model": "clubs.club",
+  "pk": 21,
+  "fields": {
+    "name": "Aston Villa"
+  }
+}
+]

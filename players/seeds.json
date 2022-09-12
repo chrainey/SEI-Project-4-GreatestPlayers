@@ -1,0 +1,189 @@
+[
+{
+  "model": "players.player",
+  "pk": 1,
+  "fields": {
+    "name": "Alan Shearer",
+    "position": "Striker",
+    "nationality": "England",
+    "info": "Premier League's all-time top goalscorer",
+    "goals": 283,
+    "international_caps": 63,
+    "shirt_number": 10,
+    "image": "",
+    "clubs": [
+      1,
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "players.player",
+  "pk": 8,
+  "fields": {
+    "name": "Zinedine Zidane",
+    "position": "Midfielder",
+    "nationality": "France",
+    "info": "World cup winning captain and french talisman",
+    "goals": 95,
+    "international_caps": 108,
+    "shirt_number": 5,
+    "image": "",
+    "clubs": [
+      4,
+      13,
+      12
+    ]
+  }
+},
+{
+  "model": "players.player",
+  "pk": 9,
+  "fields": {
+    "name": "Diego Maradona",
+    "position": "Forward",
+    "nationality": "Argentina",
+    "info": "Greatest player to have ever lived",
+    "goals": 259,
+    "international_caps": 91,
+    "shirt_number": 10,
+    "image": "",
+    "clubs": [
+      18,
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "players.player",
+  "pk": 10,
+  "fields": {
+    "name": "Lionel Messi",
+    "position": "Forward",
+    "nationality": "Argentina",
+    "info": "Greatest player still alive.",
+    "goals": 494,
+    "international_caps": 162,
+    "shirt_number": 10,
+    "image": "",
+    "clubs": [
+      6,
+      14
+    ]
+  }
+},
+{
+  "model": "players.player",
+  "pk": 11,
+  "fields": {
+    "name": "Johann Cruyff",
+    "position": "Foward",
+    "nationality": "Netherlands",
+    "info": "",
+    "goals": 294,
+    "international_caps": 48,
+    "shirt_number": 14,
+    "image": "",
+    "clubs": [
+      16,
+      6
+    ]
+  }
+},
+{
+  "model": "players.player",
+  "pk": 12,
+  "fields": {
+    "name": "Cristiano Ronaldo",
+    "position": "Forward",
+    "nationality": "Portugal",
+    "info": "",
+    "goals": 586,
+    "international_caps": 189,
+    "shirt_number": 7,
+    "image": "",
+    "clubs": [
+      13,
+      19,
+      4,
+      5
+    ]
+  }
+},
+{
+  "model": "players.player",
+  "pk": 13,
+  "fields": {
+    "name": "Ronaldo",
+    "position": "Striker",
+    "nationality": "Brazil",
+    "info": "The Phenomenon",
+    "goals": 280,
+    "international_caps": 98,
+    "shirt_number": 9,
+    "image": "",
+    "clubs": [
+      17,
+      4,
+      6,
+      15
+    ]
+  }
+},
+{
+  "model": "players.player",
+  "pk": 14,
+  "fields": {
+    "name": "Franz Beckenbauer",
+    "position": "Defender",
+    "nationality": "Germany",
+    "info": "Der Kaiser",
+    "goals": 79,
+    "international_caps": 103,
+    "shirt_number": 5,
+    "image": "",
+    "clubs": [
+      11
+    ]
+  }
+},
+{
+  "model": "players.player",
+  "pk": 15,
+  "fields": {
+    "name": "Paolo Maldini",
+    "position": "Defender",
+    "nationality": "Italy",
+    "info": "",
+    "goals": 29,
+    "international_caps": 126,
+    "shirt_number": 3,
+    "image": "",
+    "clubs": [
+      8
+    ]
+  }
+},
+{
+  "model": "players.player",
+  "pk": 16,
+  "fields": {
+    "name": "Peter Schmeichel",
+    "position": "Goalkeeper",
+    "nationality": "Denmark",
+    "info": "",
+    "goals": 9,
+    "international_caps": 129,
+    "shirt_number": 1,
+    "image": "",
+    "clubs": [
+      21,
+      19,
+      20,
+      5
+    ]
+  }
+}
+]

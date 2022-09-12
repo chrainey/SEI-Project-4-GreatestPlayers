@@ -1,0 +1,11 @@
+[
+{
+  "model": "reviews.review",
+  "pk": 3,
+  "fields": {
+    "text": "A new review",
+    "created_at": "2022-09-11T10:54:51.396Z",
+    "player": 1
+  }
+}
+]
