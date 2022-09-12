@@ -1,4 +1,3 @@
-from xml.dom import ValidationErr
 from rest_framework import serializers
 from django.contrib.auth import get_user_model, password_validation
 User = get_user_model()
