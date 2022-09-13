@@ -9,7 +9,7 @@ class Player(models.Model):
   goals = models.PositiveIntegerField(default=None)
   international_caps = models.PositiveIntegerField(default=None)
   shirt_number = models.PositiveIntegerField(default=None)
-  image = models.ImageField(upload_to='images', default=None, blank=True)
+  image = models.ImageField(upload_to='', default=None, blank=True)
   clubs = models.ManyToManyField(
     "clubs.Club",
     related_name="players"
