@@ -38,15 +38,19 @@ const Player = () => {
             <Card border="dark" className="player-card bg-transparent">
               <Card.Img  variant="top" src={player.image} alt={player.name} />
               <Card.Body className="bg-transparent">
-                <Card.Title>{player.name} - {player.nationality}</Card.Title>
+                <Card.Title>{player.name} - {player.position}</Card.Title>
                 <Card.Text>
                   {player.description}
                 </Card.Text>
               </Card.Body>
               <ListGroup className="list-group-flush ">
-                <ListGroup.Item>Country: {player.goals}</ListGroup.Item>
-                <ListGroup.Item>Rating: {player.international_caps}</ListGroup.Item>
-                <ListGroup.Item>Activites: {player.position}</ListGroup.Item>
+                <ListGroup.Item>Clubs:</ListGroup.Item>
+                <ListGroup.Item>Shirt Number: {player.shirt_number}</ListGroup.Item>
+                <ListGroup.Item>Position: {player.position}</ListGroup.Item>
+                <ListGroup.Item>Goals: {player.goals}</ListGroup.Item>
+                <ListGroup.Item>Nationality: {player.position}</ListGroup.Item>
+                <ListGroup.Item>International Caps: {player.international_caps}</ListGroup.Item>
+                <ListGroup.Item>Info: {player.info}</ListGroup.Item>
               </ListGroup>
               <Card.Body>
                 {/* <Card.Link href="#">Card Link</Card.Link>
