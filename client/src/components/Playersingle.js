@@ -3,7 +3,7 @@ import { useParams, Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import Container from 'react-bootstrap/Container'
 import Spinner from './Spinner.js'
-import  Card  from 'react-bootstrap/Card'
+import Card  from 'react-bootstrap/Card'
 import ListGroup from 'react-bootstrap/ListGroup'
 
 const Player = () => {
@@ -36,7 +36,7 @@ const Player = () => {
           <div className="kitchen-sink">
             <h1>{player.name}</h1>
             <Card border="dark" className="player-card bg-transparent">
-              <Card.Img  variant="top" src={player.image} alt={player.name} />
+              <Card.Img  variant="top" src={player.image_1} alt={player.name} />
               <Card.Body className="bg-transparent">
                 <Card.Title>{player.name} - {player.position}</Card.Title>
                 <Card.Text>
