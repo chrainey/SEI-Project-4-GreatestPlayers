@@ -41,7 +41,7 @@ const AllPlayers = () => {
                   <Col key={id} md="5" lg="4" className='mb-4'>
                     <Link style={{ textDecoration: 'none', color: 'black' }} to={`/players/${id}/`}>
                       <Card>
-                        <Card.Img className='w-100, h-15vh' variant='top' src={item.image_1}></Card.Img>
+                        <Card.Img className='w-100' variant='top' src={item.image_1}></Card.Img>
                         <Card.Body className='bg-light'>
                           <Card.Title className='text-center mb-0 text-decoration-none'>{item.name} - {item.country}</Card.Title>
                         </Card.Body>

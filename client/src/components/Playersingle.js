@@ -36,12 +36,9 @@ const Player = () => {
           <div className="kitchen-sink">
             <h1>{player.name}</h1>
             <Card border="dark" className="player-card bg-transparent">
-              <Card.Img  variant="top" src={player.image_1} alt={player.name} />
+              <Card.Img variant="top" src={player.image_1} alt={player.name} />
               <Card.Body className="bg-transparent">
                 <Card.Title>{player.name} - {player.position}</Card.Title>
-                <Card.Text>
-                  {player.description}
-                </Card.Text>
               </Card.Body>
               <ListGroup className="list-group-flush ">
                 <ListGroup.Item>Clubs:</ListGroup.Item>
@@ -94,7 +91,7 @@ const Player = () => {
                 </>
               }
             </Container>             */}
-            <Link to="/travel" className='btn dark'>Back to all player</Link>
+            <Link to="/players" className='btn dark'>Back to all players</Link>
           </div>
           :
           <h2 className="text-center">

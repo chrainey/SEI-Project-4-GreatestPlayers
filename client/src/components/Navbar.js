@@ -15,7 +15,7 @@ const NavBar = () => {
           <Nav.Link as={Link} to='/' >Home</Nav.Link>        
           <Nav.Link as={Link} to='/players'>Players</Nav.Link>
           <Nav.Link as={Link} to='/images'>Images</Nav.Link>
-          <Nav.Link as={Link} to=''>Clubs</Nav.Link>
+          <Nav.Link as={Link} to='/clubs'>Clubs</Nav.Link>
           <Nav.Link as={Link} to='/register'>Register</Nav.Link>
           <Nav.Link as={Link} to='/login'>Login</Nav.Link>
         </Navbar.Collapse>

@@ -7,9 +7,11 @@ import Register from './components/Register'
 import Dashboard from './components/Dashboard'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import Allplayers from './components/Allplayers'
+import AllPlayers from './components/Allplayers'
 import Images from './components/Images'
 import Playersingle from './components/Playersingle'
+import AllClubs from './components/Allclubs'
+import Clubsingle from './components/Clubsingle'
 
 
 function App() {
@@ -21,8 +23,10 @@ function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/players" element={<Allplayers />} />
+          <Route path="/players" element={<AllPlayers />} />
           <Route path="/players/:playerId/" element={<Playersingle />}  />
+          <Route path="/clubs" element={<AllClubs />} />
+          <Route path="/clubs/:clubId/" element={<Clubsingle />}  />
           <Route path="/images" element={<Images />} />
           <Route path="/register" element={<Register />} />
         </Routes>
