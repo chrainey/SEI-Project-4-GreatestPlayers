@@ -31,7 +31,7 @@ const AllClubs = () => {
       { clubData[0] ?
         <div className='all-clubs-page'>
           <Container as="main" className='club-index'>
-            <h1 className='text-center mb-4'>Football Clubs</h1>
+            <h1 className='text-center mb-4'>Football Clubs </h1>
             <Row className='club-row'>
               { clubData.map(item => {
                 console.log(item)

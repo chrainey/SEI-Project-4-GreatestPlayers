@@ -1,3 +1,4 @@
+import { Buffer } from 'buffer'
 
 export const setToken = (token) => {
   window.localStorage.setItem('local-user-Token', token)

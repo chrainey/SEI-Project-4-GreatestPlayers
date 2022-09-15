@@ -41,7 +41,7 @@ const Login = () => {
       {errors && <div className='error'>{errors}</div>}
 
       <form onSubmit={onSubmit} className='form-wrapper'>
-        <input type='text' name='userName' placeholder='Username' onChange={handleChange} value={loginData.userName} />
+        <input type='text' name='email' placeholder='Email' onChange={handleChange} value={loginData.email} />
         <input type='password' name='password' placeholder='Password' onChange={handleChange} value={loginData.password} />
         <button type='submit'>Login</button>
       </form>

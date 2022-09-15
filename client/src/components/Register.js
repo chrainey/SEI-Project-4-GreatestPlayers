@@ -13,6 +13,7 @@ const Register = () => {
   const [ formData, setFormData ] = useState({
     email: '',
     userName: '',
+    profile_image: '',
     password: '',
     confirmPassword: '',
   })
@@ -63,7 +64,7 @@ const Register = () => {
             <h3 className='text-center'>Register</h3>
             
             <label htmlFor="username">Username</label>
-            <input onChange={handleChange} type="text" name="username" placeholder="Username" value={formData.userName} />
+            <input onChange={handleChange} type="text" name="username" placeholder="Username" value={formData.username} />
           
             
             <label htmlFor="email">Email</label>
@@ -75,7 +76,7 @@ const Register = () => {
 
             
             <label htmlFor="password_confirmation">Confirm Password</label>
-            <input onChange={handleChange} type="password" name="password_confirmation" placeholder='Confirm Password' value={formData.confirmPassword} />
+            <input onChange={handleChange} type="password" name="password_confirmation" placeholder='Confirm Password' value={formData.password_confirmation} />
 
             
             { errors && <p className='text-danger'>{errors}</p>}

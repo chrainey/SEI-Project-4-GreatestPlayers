@@ -4,22 +4,32 @@ from rest_framework import status
 from rest_framework.exceptions import NotFound, PermissionDenied
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
+
 from .serializers.common import ReviewSerializer
 from .models import Review
 
 # Create your views here.
 
 class ReviewListView(APIView):
-
+  
   def post(self, request):
     review_to_create = ReviewSerializer(data=request.data)
+    
     try:
       review_to_create.is_valid(True)
       review_to_create.save()
       return Response(review_to_create.data, status=status.HTTP_201_CREATED)
     except Exception as e:
-      print('e.__dict__')
-      return Response("FAILED", status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+      print(e, review_to_create.e, 'errors') 
+      return Response("FAILED", review_to_create.e, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+
+  def get(self, request):
+    reviews = Review.objects.all()
+    print("reviews ->", reviews)
+    serialized_reviews = ReviewSerializer(reviews, many=True)
+    print(serialized_reviews)
+
+    return Response(serialized_reviews.data, status=status.HTTP_200_OK)
 
 class ReviewDetailView(APIView):
   permission_classes = (IsAuthenticatedOrReadOnly, )

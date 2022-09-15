@@ -2,7 +2,30 @@
   box-sizing: border-box;
 }
 
-.card-img {
-  height: 15vh;
+.view {
+  text-align: center;
+}
+
+
+.card-img-top {
+  height: 35vh;
   
+}
+
+.navbar{
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+  background-color: lightgray;
+  .nav-link{
+    margin-left: 10px;
+    cursor: pointer;
+  };
+}
+.footer {
+  background-color: lightgray;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.2);  
+  list-style-type: none;
+  li {
+    padding: 2px;
+    text-decoration: none;
+  }
 }

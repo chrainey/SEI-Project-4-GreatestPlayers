@@ -12,6 +12,7 @@ import Images from './components/Images'
 import Playersingle from './components/Playersingle'
 import AllClubs from './components/Allclubs'
 import Clubsingle from './components/Clubsingle'
+import Review from './helpers/Review'
 
 
 function App() {
@@ -22,12 +23,13 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/login" element={<Login />} />
           <Route path="/players" element={<AllPlayers />} />
           <Route path="/players/:playerId/" element={<Playersingle />}  />
           <Route path="/clubs" element={<AllClubs />} />
           <Route path="/clubs/:clubId/" element={<Clubsingle />}  />
           <Route path="/images" element={<Images />} />
+          <Route path='/reviews/:playerId/' element={<Review /> } />
+          <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
         </Routes>
         <Footer />

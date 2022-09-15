@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container'
 import Spinner from './Spinner.js'
 import Card  from 'react-bootstrap/Card'
 import ListGroup from 'react-bootstrap/ListGroup'
+import Button from 'react-bootstrap/button'
 
 const Player = () => {
   const navigate = useNavigate()
@@ -36,12 +37,17 @@ const Player = () => {
           <div className="kitchen-sink">
             <h1>{player.name}</h1>
             <Card border="dark" className="player-card bg-transparent">
-              <Card.Img variant="top" src={player.image_1} alt={player.name} />
+              <Card.Img className='w-100' variant="top" src={player.image_1} alt={player.name} />
               <Card.Body className="bg-transparent">
                 <Card.Title>{player.name} - {player.position}</Card.Title>
+
               </Card.Body>
               <ListGroup className="list-group-flush ">
                 <ListGroup.Item>Clubs:</ListGroup.Item>
+                {player.clubs && player.clubs.length && player.clubs.map((club) => (
+                  <p key={club.name}>{club.name}</p>
+                  
+                ))}  
                 <ListGroup.Item>Shirt Number: {player.shirt_number}</ListGroup.Item>
                 <ListGroup.Item>Position: {player.position}</ListGroup.Item>
                 <ListGroup.Item>Goals: {player.goals}</ListGroup.Item>
@@ -49,22 +55,19 @@ const Player = () => {
                 <ListGroup.Item>International Caps: {player.international_caps}</ListGroup.Item>
                 <ListGroup.Item>Info: {player.info}</ListGroup.Item>
               </ListGroup>
-              <Card.Body>
-                {/* <Card.Link href="#">Card Link</Card.Link>
-                <Card.Link href="#">Another Link</Card.Link> */}
-              </Card.Body>
+
             </Card>
-            {/* <Container as='section' className='text-center'>
+            <Container as='section' className='text-center'>
               <h3>reviews</h3>
-              { player.reviews.length > 0
+              { player.reviews > 0
                 ?
                 player.reviews.map(review => {
-                  const { _id: reviewId, reviewText, rating } = review
-                  const activities = review.activities.join(', ')
+                  const { id: reviewId, reviewText } = review
+                  console.log(review)
+                  
                   return (                       
-                    <Link to={`/travel/${review.playerId}`}>
+                    <Link key={reviewId} to={`/api/players/${review.playerId}`}>
                       <Card key={reviewId} className="re-card">
-                        <Card.Img variant='top' src={review.reviewImgUrl[0] ? review.reviewImgUrl[0] : 'https://sei65-players.s3.eu-west-1.amazonaws.com/users/default-image.jpg' }></Card.Img>
                         <Card.Body>
                           <Card.Title className='text-center mb-0'>{review.name}</Card.Title>        
                           <Card.Text>
@@ -72,13 +75,10 @@ const Player = () => {
                           </Card.Text>  
                           <ListGroup className="list-group-flush">
                             <ListGroup.Item><span>👤</span> {review.createdBy}</ListGroup.Item>
-                            <ListGroup.Item>Rating: {rating}</ListGroup.Item>
-                            <ListGroup.Item>Activites: {activities}</ListGroup.Item>
                           </ListGroup>                    
                         
                           <div className="buttons mb-4">
-                            <Button variant="danger" onClick={deleteReview}>Delete Review</Button>
-                            <Link to={'/landing'} className='btn btn-primary'>Edit Review</Link>
+                            {/* Will have buttons for delete review and edit review in here */}
                           </div>                          
                         </Card.Body>
                       </Card>
@@ -90,8 +90,10 @@ const Player = () => {
                   { errors ? <h2>Something went wrong. Please try again later</h2> : <p>Add your first review</p>}
                 </>
               }
-            </Container>             */}
-            <Link to="/players" className='btn dark'>Back to all players</Link>
+            </Container>             
+            <Link to="/players/">
+              <button>Back to all players</button>
+            </Link>
           </div>
           :
           <h2 className="text-center">
@@ -99,9 +101,10 @@ const Player = () => {
           </h2>
         }
     
-        <Link to={`/review/${playerId}`}>
+        <Link to={`/reviews/${playerId}`}>
           <button>Add a review</button>
         </Link>
+
       
       </Container>
     </div>
