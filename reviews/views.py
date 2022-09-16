@@ -11,8 +11,10 @@ from .models import Review
 # Create your views here.
 
 class ReviewListView(APIView):
+  permission_classes = (IsAuthenticatedOrReadOnly, )
   
   def post(self, request):
+    request.data['owner'] = request.user.id
     review_to_create = ReviewSerializer(data=request.data)
     
     try:
@@ -20,8 +22,8 @@ class ReviewListView(APIView):
       review_to_create.save()
       return Response(review_to_create.data, status=status.HTTP_201_CREATED)
     except Exception as e:
-      print(e, review_to_create.e, 'errors') 
-      return Response("FAILED", review_to_create.e, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+      print(e, 'errors') 
+      return Response("FAILED", status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
   def get(self, request):
     reviews = Review.objects.all()

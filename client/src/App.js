@@ -28,7 +28,7 @@ function App() {
           <Route path="/clubs" element={<AllClubs />} />
           <Route path="/clubs/:clubId/" element={<Clubsingle />}  />
           <Route path="/images" element={<Images />} />
-          <Route path='/reviews/:playerId/' element={<Review /> } />
+          <Route path='/review/:playerId/' element={<Review /> } />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
         </Routes>

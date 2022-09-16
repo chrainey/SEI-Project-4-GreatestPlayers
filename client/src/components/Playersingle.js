@@ -6,12 +6,14 @@ import Spinner from './Spinner.js'
 import Card  from 'react-bootstrap/Card'
 import ListGroup from 'react-bootstrap/ListGroup'
 import Button from 'react-bootstrap/button'
+import { getToken, userIsOwner } from '../helpers/auth'
+
 
 const Player = () => {
   const navigate = useNavigate()
   const { playerId } = useParams()
   const [ player, setPlayer ] = useState([])
-  
+  const [ reviews, setReviews] = useState([])
   const [ errors, setErrors ] = useState(false)
 
   useEffect(() => {
@@ -29,14 +31,30 @@ const Player = () => {
     
   }, [playerId])
 
+  const deleteReview = async (event) => {
+    
+    event.preventDefault()
+    try {
+      const { data } = await axios.delete(`/api/reviews/${event.target.name}/`, {
+        headers: {
+          Authorization: `Bearer ${getToken()}`,
+        },
+      })
+      console. log('review showing', data.review[0].id)
+      setReviews(data.review[0].id)
+      navigate('/')
+    } catch (err) {
+      console.log(err)
+    }
+  }
+
   return (
     <div className='player-page'>
       <Container as="main">
         { player ? 
           
           <div className="kitchen-sink">
-            <h1>{player.name}</h1>
-            <Card border="dark" className="player-card bg-transparent">
+            <Card border="dark" className="player-card">
               <Card.Img className='w-100' variant="top" src={player.image_1} alt={player.name} />
               <Card.Body className="bg-transparent">
                 <Card.Title>{player.name} - {player.position}</Card.Title>
@@ -45,13 +63,13 @@ const Player = () => {
               <ListGroup className="list-group-flush ">
                 <ListGroup.Item>Clubs:</ListGroup.Item>
                 {player.clubs && player.clubs.length && player.clubs.map((club) => (
-                  <p key={club.name}>{club.name}</p>
+                  <ListGroup.Item key={club.name}>{club.name}</ListGroup.Item>
                   
                 ))}  
                 <ListGroup.Item>Shirt Number: {player.shirt_number}</ListGroup.Item>
                 <ListGroup.Item>Position: {player.position}</ListGroup.Item>
                 <ListGroup.Item>Goals: {player.goals}</ListGroup.Item>
-                <ListGroup.Item>Nationality: {player.position}</ListGroup.Item>
+                <ListGroup.Item>Nationality: {player.nationality}</ListGroup.Item>
                 <ListGroup.Item>International Caps: {player.international_caps}</ListGroup.Item>
                 <ListGroup.Item>Info: {player.info}</ListGroup.Item>
               </ListGroup>
@@ -72,14 +90,13 @@ const Player = () => {
                           <Card.Title className='text-center mb-0'>{review.name}</Card.Title>        
                           <Card.Text>
                             {reviewText}
-                          </Card.Text>  
-                          <ListGroup className="list-group-flush">
-                            <ListGroup.Item><span>👤</span> {review.createdBy}</ListGroup.Item>
-                          </ListGroup>                    
-                        
+                          </Card.Text>
+                          { userIsOwner(review) && 
                           <div className="buttons mb-4">
-                            {/* Will have buttons for delete review and edit review in here */}
-                          </div>                          
+                            <Button variant="danger" onClick={deleteReview}>Delete Review</Button>
+                            <Link to={'/players'} className='btn btn-primary'>Edit Review</Link>
+                          </div> 
+                          }                         
                         </Card.Body>
                       </Card>
                     </Link>             
@@ -101,7 +118,7 @@ const Player = () => {
           </h2>
         }
     
-        <Link to={`/reviews/${playerId}`}>
+        <Link to={`/review/${playerId}`}>
           <button>Add a review</button>
         </Link>
 

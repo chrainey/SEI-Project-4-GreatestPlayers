@@ -18,47 +18,42 @@ const NavBar = () => {
 
 
   return (
-    
-    <Navbar expand="sm">
-      <Container as="section">
-        <Navbar.Brand as={Link} to="/">🌍</Navbar.Brand>
-        <Navbar.Toggle aria-controls='basic-navbar-nav' />
-        <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end'>
-          <Nav.Link as={Link} to='/' >Home</Nav.Link>        
-          <Nav.Link as={Link} to='/players'>Players</Nav.Link>
-          <Nav.Link as={Link} to='/clubs'>Clubs</Nav.Link>
-          <Nav.Link as={Link} to='/images'>Images</Nav.Link>
-          { userIsAuthenticated()
-            ?
-            <>
-              <Nav.Link as={Link} to={`/users/${userId}`} >User Profile</Nav.Link>
-              <span onClick={handleLogOut}>Logout</span>
-            </>
-            :
-            <>
-              <Nav.Link as={Link} to='/register'>Register</Nav.Link>
-              <Nav.Link as={Link} to='/login'>Login</Nav.Link>
-            </>
-          }
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>  
+    <Nav variant="tabs" defaultActiveKey="/home">
+      <Nav.Item>
+        <Navbar.Brand className="logo" as={Link} to="/">⚽️</Navbar.Brand>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link style={{ textDecoration: 'none', color: 'black', padding: '10px, 30px' }} as={Link} to='/' >Home</Nav.Link> 
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link style={{ textDecoration: 'none', color: 'black', padding: '10px, 30px' }} as={Link} to='/players' >Players</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link style={{ textDecoration: 'none', color: 'black', padding: '10px, 30px' }} as={Link} to='/clubs' >Clubs</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link style={{ textDecoration: 'none', color: 'black', padding: '10px, 30px' }} as={Link} to='/images' >Add Image</Nav.Link>
+      </Nav.Item>
+      { userIsAuthenticated()
+        ?
+        <>
+          <Nav.Item>
+            <Nav.Link style={{ textDecoration: 'none', color: 'black', padding: '10px, 30px' }}  onClick={handleLogOut}>Logout</Nav.Link>
+          </Nav.Item>
+        </>
+        :
+        <>
+          <Nav.Item>
+            <Nav.Link style={{ textDecoration: 'none', color: 'black', padding: '10px, 30px' }} as={Link} to='/register'>Register</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link style={{ textDecoration: 'none', color: 'black', padding: '10px, 30px' }} as={Link} to='/login'>Login</Nav.Link>
+          </Nav.Item>
+        </>      
+      }      
+    </Nav>
   )
 }
 
 export default NavBar
 
-
-{/* <Navbar expand="sm">
-      <Container as="section">
-        <Navbar.Toggle aria-controls='basic-navbar-nav' />
-        <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end'>
-          <Nav.Link as={Link} to='/' >Home</Nav.Link>        
-          <Nav.Link as={Link} to='/players'>Players</Nav.Link>
-          <Nav.Link as={Link} to='/images'>Images</Nav.Link>
-          <Nav.Link as={Link} to='/clubs'>Clubs</Nav.Link>
-          <Nav.Link as={Link} to='/register'>Register</Nav.Link>
-          <Nav.Link as={Link} to='/login'>Login</Nav.Link>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar> */}

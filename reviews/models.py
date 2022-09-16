@@ -3,7 +3,7 @@ from django.db import models
 
 # Create your models here.
 class Review(models.Model):
-  text =models.TextField(max_length=300)
+  text =models.TextField(max_length=500)
   created_at = models.DateTimeField(auto_now_add=True)
 # below is One to many relationship. Hence player no players
   player = models.ForeignKey(

@@ -3,6 +3,8 @@ import { useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 
 import { getToken } from './auth'
+import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/button'
 
 
 const Review = () => {
@@ -13,8 +15,7 @@ const Review = () => {
   const [ review, setReview ] = useState(
     {
       text: '',
-      playerId: '',
-      playerName: '',
+      player: parseInt(playerId),
     }
   )
   
@@ -30,14 +31,14 @@ const Review = () => {
   const handleSubmit = async (event) => {
     event.preventDefault()
     try {
-      const { data } = await axios.post(`/api/reviews/${playerId}/`, review, {
+      const { data } = await axios.post('/api/reviews/', review, {
         headers: {
           Authorization: `Bearer ${getToken()}`,
         },
       })
       console.log(data)
       setReview(data)
-      navigate(`/api/reviews/${playerId}`)
+      navigate(`/players/${playerId}`)
     } catch (error) {
       console.log(error)
       setErrors(error)
@@ -45,13 +46,17 @@ const Review = () => {
   }
 
   return (
-    <main>
-      <form className="review-form" onSubmit={handleSubmit}>
+    <main className="add-review-page justify-content-center">
+      <Form className="review-form" onSubmit={handleSubmit}>
         <h1>Add review</h1>
-        <label htmlFor="reviewText">Review Text</label>
-        <textarea name="reviewText" placeholder="Review text" value={review.reviewText} onChange={handleChange} ></textarea>
-        <input type="submit"/> 
-      </form>
+        <Form.Group>
+          <Form.Label htmlFor="text" >Review Text</Form.Label>          
+          <Form.Control as="textarea" rows={4} name="text" placeholder="Type Review Here" value={review.text} onChange={handleChange} />
+        </Form.Group>
+        <Button variant="primary" type="submit">
+          Submit
+        </Button>  
+      </Form>
     </main>
   )
 }

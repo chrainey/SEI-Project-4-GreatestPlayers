@@ -6,7 +6,8 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { Link } from 'react-router-dom'
 import Spinner from './Spinner'
-import Filters from './Filters'
+import Filters from '../helpers/Filters'
+import Customcard from '../helpers/Customcard'
 
 const AllPlayers = () => {
 
@@ -48,35 +49,18 @@ const AllPlayers = () => {
         <div className='all-player-page'>
           <Container as="main" className='player-index'>
             <h1 className='text-center mb-4'>Football Legends</h1>
-            <div className='filter-container'>
+            <div className="filters-container">
+              {/* Filters */}
               <Filters filters={filters} setFilters={setFilters} players={players} setFilteredPlayers={setFilteredPlayers} />
+              {/* PLayer list */}
             </div>
-            <Row className="filter-nation">
+            <div className="row">
               {
-                filteredPlayers.map(item => {
-                  const { id } = item
-                  return <Card key={id} {...item} />
+                filteredPlayers.map(player => {
+                  return <Customcard key={player.name} {...player} />
                 })
               }
-            </Row>
-            <Row className='player-row'>
-              { playerData.map(item => {
-                const { id } = item
-                return (
-                  <Col key={id} md="5" lg="4" className='mb-4'>
-                    <Link style={{ textDecoration: 'none', color: 'black' }} to={`/players/${id}/`}>
-                      <Card>
-                        <Card.Img className='w-100' variant='top' src={item.image_1}></Card.Img>
-                        <Card.Body className='bg-light'>
-                          <Card.Title className='text-center mb-0 text-decoration-none'>{item.name} - {item.country}</Card.Title>
-                        </Card.Body>
-                      </Card>
-                    </Link>
-                  </Col>
-                )
-              })
-              }
-            </Row>
+            </div>
           </Container>
         </div>
         :

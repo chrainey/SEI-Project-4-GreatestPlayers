@@ -15,21 +15,28 @@ const Filters = ({ filters, setFilters, players, setFilteredPlayers }) => {
 
     const regexSearch = new RegExp(filters.search, 'i')
     const filteredArray = players.filter(player => {
-      return regexSearch.test(players.name) && (player.nationality === filters.nationality || filters.nationality === 'All')
+      return regexSearch.test(player.name) && (player.nationality === filters.nationality || filters.nationality === 'All')
+      || (player.position === filters.position || filters.position === 'All')
     })
     console.log(filteredArray)
     setFilteredPlayers(filteredArray)
 
   }, [filters, players])
 
-  const clubs = [ ...new Set(players.map(player => player.nationality))]
+  const nations = [ ...new Set(players.map(player => player.nationality))]
+  const positions = [ ...new Set(players.map(player => player.position))]
+
 
   return (
-    <div className="filters mb-4 mt-4 d-flex">
+    <div className="filters mb-4 mt-4">
       {/* Club dropdown */}
       <select onChange={handleChange} name="nationality" value={filters.nationality}>
         <option value="All">All Nationalities</option>
-        { clubs.map(nationality => <option key={nationality} value={nationality}>{nationality}</option>)}
+        { nations.map(nationality => <option key={nationality} value={nationality}>{nationality}</option>)}
+      </select>
+      <select onChange={handleChange} name="position" value={filters.nationality}>
+        <option value="All">All Positions</option>
+        { positions.map(position => <option key={position} value={position}>{position}</option>)}
       </select>
       <input onChange={handleChange} type="text" name="search" value={filters.search} placeholder="Search" />
     </div>
