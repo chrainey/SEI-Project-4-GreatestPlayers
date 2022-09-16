@@ -13,10 +13,10 @@ const Register = () => {
 
   const [ formData, setFormData ] = useState({
     email: '',
-    userName: '',
+    username: '',
     profile_image: '',
     password: '',
-    confirmPassword: '',
+    password_confirmation: '',
   })
   const [ loginData, setLoginData ] = useState({
     userName: '',
@@ -65,7 +65,7 @@ const Register = () => {
           <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3" >
               <Form.Label>User Name</Form.Label>
-              <Form.Control onChange={handleChange} type="text" name="userName" placeholder="Username" value={formData.username} /> 
+              <Form.Control onChange={handleChange} type="text" name="username" placeholder="Username" value={formData.username} /> 
             </Form.Group>
 
             <Form.Group className="mb-3" >
@@ -83,7 +83,7 @@ const Register = () => {
 
             <Form.Group className="mb-3" >
               <Form.Label>Confirm Password</Form.Label>
-              <Form.Control onChange={handleChange} type="password" name="confirmPassword" placeholder='Confirm Password' value={formData.password_confirmation} /> 
+              <Form.Control onChange={handleChange} type="password" name="password_confirmation" placeholder='Confirm Password' value={formData.password_confirmation} /> 
             </Form.Group>
 
             { errors && <p className='text-danger'>{errors}</p>}

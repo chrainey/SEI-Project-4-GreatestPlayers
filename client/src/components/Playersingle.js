@@ -9,6 +9,7 @@ import Button from 'react-bootstrap/button'
 import { getToken, userIsOwner } from '../helpers/auth'
 
 
+
 const Player = () => {
   const navigate = useNavigate()
   const { playerId } = useParams()
@@ -21,7 +22,7 @@ const Player = () => {
       try {
         const { data } = await axios.get(`/api/players/${ playerId }/`)
         setPlayer(data)
-        
+        setReviews(data.reviews)
         console.log(data)
       } catch (err) {
         setErrors(true)
@@ -39,12 +40,14 @@ const Player = () => {
         headers: {
           Authorization: `Bearer ${getToken()}`,
         },
+        
       })
-      console. log('review showing', data.review[0].id)
+      console.log(getToken())
       setReviews(data.review[0].id)
-      navigate('/')
+      
+      navigate(`/players/${ playerId }`)
     } catch (err) {
-      console.log(err)
+      console.log(err) 
     }
   }
 
@@ -75,31 +78,31 @@ const Player = () => {
               </ListGroup>
 
             </Card>
-            <Container as='section' className='text-center'>
-              <h3>reviews</h3>
-              { player.reviews > 0
+            <Container className="review-container text-center">
+              <h3>Reviews</h3>
+              { reviews.length > 0
                 ?
-                player.reviews.map(review => {
-                  const { id: reviewId, reviewText } = review
+                reviews.map(review => {
+                  //const { id, text } = review
                   console.log(review)
                   
                   return (                       
-                    <Link key={reviewId} to={`/api/players/${review.playerId}`}>
-                      <Card key={reviewId} className="re-card">
-                        <Card.Body>
-                          <Card.Title className='text-center mb-0'>{review.name}</Card.Title>        
-                          <Card.Text>
-                            {reviewText}
-                          </Card.Text>
-                          { userIsOwner(review) && 
-                          <div className="buttons mb-4">
-                            <Button variant="danger" onClick={deleteReview}>Delete Review</Button>
-                            <Link to={'/players'} className='btn btn-primary'>Edit Review</Link>
-                          </div> 
-                          }                         
-                        </Card.Body>
-                      </Card>
-                    </Link>             
+                    // <Link key={review.id} to={`/api/players/${review.playerId}`}>
+                    <Card key={review.id} className="re-card">
+                      <Card.Body>
+                        <Card.Title className='text-center mb-0'>{review.name}</Card.Title>        
+                        <Card.Text>
+                          {review.text}
+                        </Card.Text>
+                      </Card.Body>
+                      { userIsOwner(review) && 
+                        <div className="buttons mb-4">
+                          <Button variant="danger" name = {review.id} onClick={deleteReview}>Delete Review</Button>
+                          {/* <Link to={'/players'} className='btn btn-primary'>Edit Review</Link> */}
+                        </div> 
+                      }                         
+                    </Card>
+                    // </Link>             
                   )
                 })
                 :

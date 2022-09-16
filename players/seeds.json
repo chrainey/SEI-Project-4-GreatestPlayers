@@ -6,7 +6,7 @@
     "name": "Alan Shearer",
     "position": "Striker",
     "nationality": "England",
-    "info": "Premier League's all-time top goalscorer",
+    "info": "Perhaps the greatest player ever to don the Three Lions kit, Alan shearer was the most “straight-forward”, as Laurie McMenemy described it, of strikers. Aggression, endurance, the ability to be everywhere on the pitch. Scoring a hat trick on his debut at Southampton, Shearer would go on to score 283 in England’s top flight, winning the Premier League with Blackburn in 1995 after knocking in 34 goals.",
     "goals": 283,
     "international_caps": 63,
     "shirt_number": 10,
@@ -19,171 +19,887 @@
   }
 },
 {
-  "model": "players.player",
-  "pk": 8,
-  "fields": {
-    "name": "Zinedine Zidane",
-    "position": "Midfielder",
-    "nationality": "France",
-    "info": "World cup winning captain and french talisman",
-    "goals": 95,
-    "international_caps": 108,
-    "shirt_number": 5,
-    "image": "",
-    "clubs": [
-      4,
-      13,
-      12
-    ]
-  }
+"model": "players.player",
+"pk": 2,
+"fields": {
+"name": "Zinedine Zidane",
+"position": "Midfielder",
+"nationality": "France",
+"info": "He was the iconic figure of a generation of French players that won the 1998 World Cup and 2000 European Championship. After a brief international retirement, he returned to the national team in 2005 and captained France to the 2006 World Cup Final, where he won the Golden Ball as the tournament's most outstanding player. He is, alongside Brazilian striker Ronaldo, the only three-time FIFA World Player of the Year winner; he also won the Ballon d'Or in 1998.",
+"goals": 95,
+"international_caps": 108,
+"shirt_number": 5,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663081497/hnm4hvjjxurtn9zwhbhh.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  4,
+  3
+]
+}
 },
 {
-  "model": "players.player",
-  "pk": 9,
-  "fields": {
-    "name": "Diego Maradona",
-    "position": "Forward",
-    "nationality": "Argentina",
-    "info": "Greatest player to have ever lived",
-    "goals": 259,
-    "international_caps": 91,
-    "shirt_number": 10,
-    "image": "",
-    "clubs": [
-      18,
-      6,
-      7
-    ]
-  }
+"model": "players.player",
+"pk": 3,
+"fields": {
+"name": "Diego Maradona",
+"position": "Forward",
+"nationality": "Argentina",
+"info": "That he played his best football in one of the most defensive leagues at the pinnacle of its prestige makes his accomplishments all the more impressive. El Pibe de Oro won Napoli their only two Serie A titles, but achieved his apotheosis by producing the most awesome World Cup goal in the competition's history—the Goal of the Century—striding, ducking and dodging through a statuesque English backline. In all, he scored 258 goals in a club career spanning three countries and six different clubs.",
+"goals": 259,
+"international_caps": 91,
+"shirt_number": 10,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663081404/ojqhv92il8lgbockfxep.webp",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  6,
+  5
+]
+}
 },
 {
-  "model": "players.player",
-  "pk": 10,
-  "fields": {
-    "name": "Lionel Messi",
-    "position": "Forward",
-    "nationality": "Argentina",
-    "info": "Greatest player still alive.",
-    "goals": 494,
-    "international_caps": 162,
-    "shirt_number": 10,
-    "image": "",
-    "clubs": [
-      6,
-      14
-    ]
-  }
+"model": "players.player",
+"pk": 4,
+"fields": {
+"name": "Lionel Messi",
+"position": "Forward",
+"nationality": "Argentina",
+"info": "",
+"goals": 494,
+"international_caps": 162,
+"shirt_number": 10,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663081426/uh7a1tgwqvdxct1ly3ah.webp",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  7,
+  6
+]
+}
 },
 {
-  "model": "players.player",
-  "pk": 11,
-  "fields": {
-    "name": "Johann Cruyff",
-    "position": "Foward",
-    "nationality": "Netherlands",
-    "info": "",
-    "goals": 294,
-    "international_caps": 48,
-    "shirt_number": 14,
-    "image": "",
-    "clubs": [
-      16,
-      6
-    ]
-  }
+"model": "players.player",
+"pk": 5,
+"fields": {
+"name": "Johan Cruyff",
+"position": "Forward",
+"nationality": "Netherlands",
+"info": "With Ajax, he won eight Eredivise titles and three European Cups in a row, scoring a total of 190 goals. As a player his stint at Barcelona earned him a lonely La Liga title, a dearth he would later rectify as the club's manager, when he won four Liga's in a row as well as the European Cup.",
+"goals": 294,
+"international_caps": 48,
+"shirt_number": 14,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663081419/v4w0vqsot9k7giynojpa.webp",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  8,
+  6
+]
+}
 },
 {
-  "model": "players.player",
-  "pk": 12,
-  "fields": {
-    "name": "Cristiano Ronaldo",
-    "position": "Forward",
-    "nationality": "Portugal",
-    "info": "",
-    "goals": 586,
-    "international_caps": 189,
-    "shirt_number": 7,
-    "image": "",
-    "clubs": [
-      13,
-      19,
-      4,
-      5
-    ]
-  }
+"model": "players.player",
+"pk": 6,
+"fields": {
+"name": "Cristiano Ronaldo",
+"position": "Forward",
+"nationality": "Portugal",
+"info": "",
+"goals": 586,
+"international_caps": 189,
+"shirt_number": 7,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663080565/bmwurcl036h9g7kgcys1.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  9,
+  4,
+  3
+]
+}
 },
 {
-  "model": "players.player",
-  "pk": 13,
-  "fields": {
-    "name": "Ronaldo",
-    "position": "Striker",
-    "nationality": "Brazil",
-    "info": "The Phenomenon",
-    "goals": 280,
-    "international_caps": 98,
-    "shirt_number": 9,
-    "image": "",
-    "clubs": [
-      17,
-      4,
-      6,
-      15
-    ]
-  }
+"model": "players.player",
+"pk": 7,
+"fields": {
+"name": "Ronaldo",
+"position": "Forward",
+"nationality": "Brazil",
+"info": "There is no defining the phenomenon that was “The Phenomenon”—the original Ronaldo. A complete player, at ease with either foot, and a truly unparalleled ability to finish from every angle possible, Ronaldo has carved himself a place in the history books as the most effective pure goal scorer of the last 50 years, if not of all time.\r\n\r\nThe awards won, both personal and collectively are mindboggling. The youngest player to receive FIFA’s World Player award—his first of three",
+"goals": 280,
+"international_caps": 98,
+"shirt_number": 9,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663081490/by23isykjioybjqj0dcz.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  10,
+  6,
+  3
+]
+}
 },
 {
-  "model": "players.player",
-  "pk": 14,
-  "fields": {
-    "name": "Franz Beckenbauer",
-    "position": "Defender",
-    "nationality": "Germany",
-    "info": "Der Kaiser",
-    "goals": 79,
-    "international_caps": 103,
-    "shirt_number": 5,
-    "image": "",
-    "clubs": [
-      11
-    ]
-  }
+"model": "players.player",
+"pk": 8,
+"fields": {
+"name": "Franz Beckenbauer",
+"position": "Defender",
+"nationality": "Germany",
+"info": "The defender of the century. Beckenbauer is the only man to have won the World Cup both playing and managing. Drawing on, then eclipsing, the free-roaming styles of Baresi and Facchetti, Beckenbauer could menace a team at any place on the pitch through a thoughtful, vivid reading of the game. Besides the WC and Euro championship earned on the field with Germany, Beckenbauer is also the only person to captain a team to three consecutive European Cup championships. “The Kaizer\"",
+"goals": 79,
+"international_caps": 103,
+"shirt_number": 5,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663081411/arg88yqng2aliipdohfg.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  11
+]
+}
 },
 {
-  "model": "players.player",
-  "pk": 15,
-  "fields": {
-    "name": "Paolo Maldini",
-    "position": "Defender",
-    "nationality": "Italy",
-    "info": "",
-    "goals": 29,
-    "international_caps": 126,
-    "shirt_number": 3,
-    "image": "",
-    "clubs": [
-      8
-    ]
-  }
+"model": "players.player",
+"pk": 9,
+"fields": {
+"name": "Paolo Maldini",
+"position": "Defender",
+"nationality": "Italy",
+"info": "A one-club man, Paolo spent 25 seasons in AC Milan’s black and red, winning five Champions Leagues, seven Serie A titles and a barrelful of personal accolades. Maldini holds the record for fastest goal in a UEFA club final (51 seconds), a goal that also made him the oldest player to score in a final. Paolo earned his first italian cap under his father in 1986 and played internationally until 2002. Paolo and Cesare are the only father son combo to win the European Cup.",
+"goals": 29,
+"international_caps": 126,
+"shirt_number": 3,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663081434/s3zpsat7jxqpyqee2ktn.webp",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  12
+]
+}
 },
 {
-  "model": "players.player",
-  "pk": 16,
-  "fields": {
-    "name": "Peter Schmeichel",
-    "position": "Goalkeeper",
-    "nationality": "Denmark",
-    "info": "",
-    "goals": 9,
-    "international_caps": 129,
-    "shirt_number": 1,
-    "image": "",
-    "clubs": [
-      21,
-      19,
-      20,
-      5
-    ]
-  }
+"model": "players.player",
+"pk": 10,
+"fields": {
+"name": "Peter Schmeichel",
+"position": "Goalkeeper",
+"nationality": "Denmark",
+"info": "",
+"goals": 9,
+"international_caps": 129,
+"shirt_number": 1,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663081441/x1ttgo7tuxlgz1hbnh0c.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  13,
+  9
+]
+}
+},
+{
+"model": "players.player",
+"pk": 11,
+"fields": {
+"name": "Michel Platini",
+"position": "Midfielder",
+"nationality": "France",
+"info": "Over the course of four short years at Juventus, he won two league championships, one European Cup (marred by the Heysel tragedy), one Cup winners Cup, one European Super Cup and one Intercontinental Cup title. Despite being a midfielder, he was Serie A's topscorer three times and was awarded three Ballon D'Ors back-to-back-to-back. For France, he won the '84 European Championship, a competition in which he finished top-scorer with nine goals, a sum as of yet unequaled.",
+"goals": 224,
+"international_caps": 72,
+"shirt_number": 10,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663181197/hnmtluhvs4mcazhbqqkr.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  4
+]
+}
+},
+{
+"model": "players.player",
+"pk": 12,
+"fields": {
+"name": "Bobby Charlton",
+"position": "Midfielder",
+"nationality": "England",
+"info": "Had Bobby Charlton not survived the Munich air disaster, Manchester United would simply not be a team of the caliber they are today. Renowned for a keen offensive instinct and long-range bombshells, Charlton collected a World Cup trophy after a personal performance earned a European Footballer of the Year award and the Golden Ball.  Charlton won the English league three times with the Red Devils, then captained the team to a European cup in 1968. Record goal-scorer for Man Utd.",
+"goals": 211,
+"international_caps": 106,
+"shirt_number": 9,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663181350/gybbnb3rqjf3ttn8mkvb.webp",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  9
+]
+}
+},
+{
+"model": "players.player",
+"pk": 13,
+"fields": {
+"name": "Marco Van Basten",
+"position": "Forward",
+"nationality": "Netherlands",
+"info": "Another footballing career abruptly truncated through injury, in his prime, Marco Van Basten and his Milan played some of the most jaw-unhinging football ever recorded. Van Basten would win the European Footballer of the Year three times (1988, '89 and '92) and FIFA World Player of the Year in 1992, scoring 277 goals in 11 pro years, in two of which he finished as the capocannoniere. He became the first player to score four goals in a Champions League match, winning two European cups in a row.",
+"goals": 219,
+"international_caps": 58,
+"shirt_number": 12,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663181445/aucrtgamojucl6fn41rz.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  12,
+  8
+]
+}
+},
+{
+"model": "players.player",
+"pk": 14,
+"fields": {
+"name": "Franco Baresi",
+"position": "Defender",
+"nationality": "Italy",
+"info": "Throughout the whole of his career, he would only wear the colors of AC Milan—staying with them through double relegation—and Italy, with both of whom he would go onto win glory. Over 20 seasons at Milan, he would win six Scudetti, three Champions Cups, two International Cups, two European Supercups and four Italian Super Cups. He was included in the ’82 Italian squad that won the World Cup, though he didn’t play a minute. Immediately afterwards, he would captain the team at 22 years old.",
+"goals": 6,
+"international_caps": 81,
+"shirt_number": 6,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663181564/xz279816zricntqzoru2.webp",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  12
+]
+}
+},
+{
+"model": "players.player",
+"pk": 15,
+"fields": {
+"name": "Gerd Muller",
+"position": "Forward",
+"nationality": "Germany",
+"info": "Tell a Dutchman your favorite player ever is Gerd Muller, and you will have lost a friend. But the goal that wrested the  ‘74 World Cup from the best Netherlands side in history was one of very, very many. 398 for Bayern Munich and 68 for West Germany (out of only 62 appearances), to be exact. His tally stills stand as the highest in Germany; his competitor is 97 goals back.",
+"goals": 487,
+"international_caps": 62,
+"shirt_number": 8,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663181639/h5k0lf2r5dwexbjmcgs0.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  11
+]
+}
+},
+{
+"model": "players.player",
+"pk": 16,
+"fields": {
+"name": "Roberto Baggio",
+"position": "Forward",
+"nationality": "Italy",
+"info": "Nicknamed “il divino codino” (the divine ponytail) for his questionable taste in coiffure, Baggio could unlock the steeliest of defenses through his speed and technical ability (see his goal against Czechozlavkia, which one can watch on repeat), redefined the Italian club and national scene renowned for their steely defense rather than artful trickery. Winner of the Ballon d’or and world player of the year in 1993, Baggio has also scored in three world cups, the only Italian to do so.",
+"goals": 220,
+"international_caps": 56,
+"shirt_number": 10,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663181721/kziytjbyb6v9e5gnyuzf.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  12,
+  4
+]
+}
+},
+{
+"model": "players.player",
+"pk": 17,
+"fields": {
+"name": "Kenny Dalglish",
+"position": "Forward",
+"nationality": "Scotland",
+"info": "Six league titles, three European Cups and five domestic cups. Record goals appearances for Scotland.YA bevvy of personal goals.  And the holder of two hats—one of the only people to simultaneously be player and manager. Dalglsh’s exploits alongside the teenage Ian Rush expunged any memories of the departing Kevin Keegan. Within his first season, Dalglish had scored 31, including the winner of the ’78 European cup final. Over 13 years, that sum would grow to 118.",
+"goals": 229,
+"international_caps": 102,
+"shirt_number": 7,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663181846/psfjm4vjeus2mlf8augm.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  14
+]
+}
+},
+{
+"model": "players.player",
+"pk": 18,
+"fields": {
+"name": "Roberto Carlos",
+"position": "Defender",
+"nationality": "Brazil",
+"info": "An explosively fast left-wing back, Roberto Carlos has scored some of the most iconic goals in World Cup history, notably his reverse bender against France. With Brazil, he would reach the ’98 final and win the 2002 trophy, but it is with Real Madrid that the list gets a little mind-boggling. Through 11 years, Roberto Carlos would make 500 appearances, win four leagues, two Intercontinental Cups and three UEFA Champions Leagues, setting up the assist for Zidane’s incredible volley in the final.",
+"goals": 69,
+"international_caps": 125,
+"shirt_number": 3,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663181906/cwxw6yx2hltplikgpp4d.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  10,
+  3
+]
+}
+},
+{
+"model": "players.player",
+"pk": 19,
+"fields": {
+"name": "Cafu",
+"position": "Defender",
+"nationality": "Brazil",
+"info": "Has won everything there is to win. Originally a midfielder, Cafu was moved to the wingback position he would dominate for decades. Nicknamed the “express train,\" Cafu won both the ’94 and ’02 editions of the World, two scudetti—one with Rome, one with Milan—Champions League in ’07 and the World Club Cup. Simply one of the best.",
+"goals": 15,
+"international_caps": 142,
+"shirt_number": 2,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663181985/xlmjoxrfvcgrlhw0iuyj.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  12
+]
+}
+},
+{
+"model": "players.player",
+"pk": 20,
+"fields": {
+"name": "Ronaldinho",
+"position": "Forward",
+"nationality": "Brazil",
+"info": "Ronaldinho was a joy to watch: quick, superlatively talented on the ball and with a penchant for the cheeky and the audacious that made him a true crowd-pleaser, talents for which he would be draped in individual awards. With Brazil, he won the 2002 edition of the World Cup in which he scored his now famous free-kick to England's damage. At the club level, he won two La Ligas and a Champions League with Barcelona. Add on top the two FIFA World player awards just for good measure.",
+"goals": 205,
+"international_caps": 97,
+"shirt_number": 10,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663081448/x2rddyq44ak6zxmmm5aj.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  12,
+  7,
+  6
+]
+}
+},
+{
+"model": "players.player",
+"pk": 21,
+"fields": {
+"name": "David Beckham",
+"position": "Midfielder",
+"nationality": "England",
+"info": "David Beckham is known for many things, but he first came to prominence as a football player. With his powerful right foot, passing ability, and signature curled free-kicks, he established himself as one of Britain’s greatest football stars. During his 20-year career, he won 19 major trophies for his clubs and appeared in 115 games for England. In 2004, Pelé named Beckham one of the 100 greatest living players.",
+"goals": 97,
+"international_caps": 115,
+"shirt_number": 7,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663182067/lddcfdmweihsfxr4z10k.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  12,
+  9,
+  7,
+  3
+]
+}
+},
+{
+"model": "players.player",
+"pk": 22,
+"fields": {
+"name": "Steven Gerrard",
+"position": "Midfielder",
+"nationality": "England",
+"info": "Though he's technically not a one-club man (thanks to that one season in LA Galaxy), it's hard to imagine Steven Gerrard in anything other than Liverpool red. Since he joined the Liverpool Academy at the age of 9, Gerrard lived and breathed for his home club. During his 17 senior seasons in Liverpool, he appeared in 710 games and scored 186 goals, becoming the club's living legend in the process.",
+"goals": 125,
+"international_caps": 114,
+"shirt_number": 8,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663182137/w7nqkaawiu9io2act9mh.webp",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  14
+]
+}
+},
+{
+"model": "players.player",
+"pk": 23,
+"fields": {
+"name": "Frank Lampard",
+"position": "Midfielder",
+"nationality": "England",
+"info": "Frank James Lampard was a British footballer who was born on June 20, 1978 in Romford, London. Lampard was a midfielder and is regarded as one of the best midfielders in football. Lampard is the leading goal scorer for the Premier League club Chelsea till date and has made 163 consecutive appearances for this team.",
+"goals": 193,
+"international_caps": 106,
+"shirt_number": 8,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663182210/ccy8vrvv3j70g25hwul4.webp",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  15,
+  13
+]
+}
+},
+{
+"model": "players.player",
+"pk": 24,
+"fields": {
+"name": "Lothar Matthaus",
+"position": "Sweeper",
+"nationality": "Germany",
+"info": "When Maradona defines someone as “The best rival I’ve ever had,\" you listen.\r\nMatthaus played in five World Cups, the most ever for an outfield player, and he holds the record for most WC matches ever played (25). Matthaus started his career as an attacking midfielder equipped with a positional clairvoyance and a watchmaker’s sense for timing; he pretty much could do anything.",
+"goals": 181,
+"international_caps": 150,
+"shirt_number": 10,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663182312/ji3keaqvgwkngiskknxx.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  11
+]
+}
+},
+{
+"model": "players.player",
+"pk": 25,
+"fields": {
+"name": "Luis Figo",
+"position": "Winger",
+"nationality": "Portugal",
+"info": "Over the course of a twenty year first-team career and between four different clubs (Sporting CP, Barcelona, Real Madrid and Inter) he won more awards than you could shake a very shakeable stick at. In abridged form: two La Liga titles with both Barcelona and Real Madrid (four total), four Serie A titles, a Champions League and a Ballon D’Or. Whew. Also, his transfer from Barcelona to Madrid set the world record at 65 million pounds.",
+"goals": 93,
+"international_caps": 127,
+"shirt_number": 7,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663182381/krhdbwrv7xkngoxyjyev.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  10,
+  6,
+  3
+]
+}
+},
+{
+"model": "players.player",
+"pk": 26,
+"fields": {
+"name": "Jurgen Klinsmann",
+"position": "Forward",
+"nationality": "Germany",
+"info": "A legendary player and coach, Klinsmann led a rampant German side to the ’90 World Cup and the ’96 Euro championship. A dominant striker of the ‘90’s, Klinsmann has scored in every international competition he has entered, beginning with the Euro ’88 and climaxing with the ’98 World Cup. With Bayern, Klinsmann would win the UEFA Cup (in which he’d set the record for most goals in a season) as well as a Bundesliga title. In all, he’d score 232 at the club level and 47 internationally.",
+"goals": 232,
+"international_caps": 108,
+"shirt_number": 18,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663182462/ieolth9cufoqa3xsjo8j.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  16,
+  11,
+  10
+]
+}
+},
+{
+"model": "players.player",
+"pk": 27,
+"fields": {
+"name": "George Best",
+"position": "Winger",
+"nationality": "Northern Ireland",
+"info": "When standing and sober, George Best did everything in his power to live up to the standards of his last name. A sturdy winger who could seemingly do everything, Best won the European Cup with Manchester United in addition to two league titles and European Footballer of the year. Unfortunately, while Best could do no wrong on the field, it seemed he could do no right off it. Best’s career lasted a fragile six years at the pinnacle of the the game before his salacious exploits took their toll.",
+"goals": 207,
+"international_caps": 37,
+"shirt_number": 7,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663182525/iusz8ws44xcsr9osp63o.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  9
+]
+}
+},
+{
+"model": "players.player",
+"pk": 28,
+"fields": {
+"name": "Paul Gascoigne",
+"position": "Midfielder",
+"nationality": "England",
+"info": "Paul “Gazza” Gascoigne was a judicious midfielder, reckless, tenacious and hell-bent on winning. Constantly hamstrung by injuries, Gascoigne nevertheless was capable of deft passes and defense-splitting runs and, when on his game, could singularly be the difference-maker for his side. Gascoigne won the FA Cup with Tottenham, though in the process, he would bust the cruciate ligaments that would hinder him for the rests of his career.",
+"goals": 83,
+"international_caps": 57,
+"shirt_number": 8,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663182588/pflocqfmtslrgehzt3um.webp",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  16,
+  2
+]
+}
+},
+{
+"model": "players.player",
+"pk": 29,
+"fields": {
+"name": "Rivaldo",
+"position": "Forward",
+"nationality": "Brazil",
+"info": "A left-footed player equipped with exquisite technique, great dribbling ability, powerful shot and facility with the goal, Rivaldo was honored with FIFA World Player of the Year, Ballon d'Or winner and European Footballer of the Year, all within a year. With Barcelona, he won two Spanish a Copa del Rey in 1998, a European Supercup in 1998 and a Catalan Cup in 2000. In 2003, after a transfer to AC Milan, he won a Champions League and a Scudetto. He captained the Brazil team to the World Cup in 02",
+"goals": 249,
+"international_caps": 74,
+"shirt_number": 10,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663182653/pylputzoeivhvqjzcmyt.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  12,
+  6
+]
+}
+},
+{
+"model": "players.player",
+"pk": 30,
+"fields": {
+"name": "Eric Cantona",
+"position": "Forward",
+"nationality": "France",
+"info": "A historic personality known for his exquisite goals as much as his short fuse and kung-fu kicks on unsuspecting fans. An inspired and talented striker, Eric Cantona employed finesse and an author’s view of the pitch to create opportunities and score. Considered one off the best players in the Premier League, Cantona rescued a middling Manchester Side and returned it to the pinnacle of international football. Such skill, combined with frequent bouts of madness, made him one to watch.",
+"goals": 131,
+"international_caps": 45,
+"shirt_number": 7,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663182724/ifswxmfrkf1lphugfqed.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  9,
+  18
+]
+}
+},
+{
+"model": "players.player",
+"pk": 31,
+"fields": {
+"name": "Romario",
+"position": "Forward",
+"nationality": "Brazil",
+"info": "f Romario, Rio’s newest mayoral candidate, is as smooth a politician as he was a goalscorer, his opponents won’t stand a chance. The classic “have foot, will travel” goalscorer, Romario has played on no less five continents, scoring over 1000 goals in the process (Apocryphal. FIFA lists him at 929 goals). As that staggering number can attest, the man could put ‘em away- and in ‘94 he did it all year long. Spanish Cup, La Liga Top Scorer, World Player of the Year, Best Player of World Cup ‘94.",
+"goals": 311,
+"international_caps": 70,
+"shirt_number": 11,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663182775/xlmgd4ezay6iii7dpoww.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  6
+]
+}
+},
+{
+"model": "players.player",
+"pk": 32,
+"fields": {
+"name": "Marcel Desailly",
+"position": "Defender",
+"nationality": "France",
+"info": "The second-highest capped player for France, Marcel Desailly was a superlative wingback for Les Blues, whom he captained after the retirement of Didier Deschamps. With France Desailly, he would win the World Cup in 1998 and then Euro 2000. He would become the first player to consecutively win two Champions League with two different teams: Marseille in ’93 and Milan in ’94. He would go on to win two Scudetti with Milan in ’94 and ’96.",
+"goals": 23,
+"international_caps": 116,
+"shirt_number": 8,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663182839/ctmhokqwlj08fmbfm9i5.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  12,
+  15
+]
+}
+},
+{
+"model": "players.player",
+"pk": 33,
+"fields": {
+"name": "Gheorghe Hagi",
+"position": "Midfielder",
+"nationality": "Romania",
+"info": "Nicknamed “the Maradona of the carpathians” as well as \"the commander\", Hagi cemented a reputation as one of the best attacking midfielders of all time. Hagi could outdribble an opponent only to lash in a stunning, one in a million left footers as well as incredible ball control and passing abilities. Holds second most Romania caps and most goals. A wandering goal scorer, Hagi was one of the few to play for both Madrid and Barcelona, scoring in all, 236 goals. He won 4 titles and the UEFA cup.",
+"goals": 237,
+"international_caps": 124,
+"shirt_number": 10,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663182983/ymnjfl01fmw2l6hmw3wc.webp",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  3,
+  6
+]
+}
+},
+{
+"model": "players.player",
+"pk": 34,
+"fields": {
+"name": "Dennis Bergkamp",
+"position": "Forward",
+"nationality": "Netherlands",
+"info": "A product of Ajax’s famed youth system, Bergkamp played his best as a second striker or playmaker with delightful result. In Amsterdam, he would score 122 goals out of 239 appearances before transferring to Arsenal. Significant in that he was one of the first premier players to come to England after the Heysel disaster, Bergkamp relieved an Arsenal team in the depths of an unforeseen medioctiry. He would add three leagues to the Highbury trophy case as well as personal FWA and PFA awards.",
+"goals": 201,
+"international_caps": 79,
+"shirt_number": 10,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663183055/hgcqo8obctc9qgueojfe.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  8,
+  17,
+  10
+]
+}
+},
+{
+"model": "players.player",
+"pk": 35,
+"fields": {
+"name": "Fabio Cannavaro",
+"position": "Defender",
+"nationality": "Italy",
+"info": "Captain of a World Cup winning side, winner of two Scudetti (later revoked) and two La Ligas, and one of the few defenders to win the Ballon D'or, Fabio Cannavaro is one of the greatest soccer players in recent memory. Prescient in his positioning, immaculate in his tackles, his virtuoso displays at the 2006 World Cup remain one of the most stupefying performances in modern memory. Heck, he even made Materazzi look like a decent player.",
+"goals": 16,
+"international_caps": 136,
+"shirt_number": 5,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663183427/rgaay6cil6g3wumk7fen.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  10,
+  3,
+  4
+]
+}
+},
+{
+"model": "players.player",
+"pk": 36,
+"fields": {
+"name": "David Seaman",
+"position": "Goalkeeper",
+"nationality": "England",
+"info": "",
+"goals": 0,
+"international_caps": 75,
+"shirt_number": 1,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663183496/yex5wfxjx683ksh1qrqe.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  17,
+  13
+]
+}
+},
+{
+"model": "players.player",
+"pk": 37,
+"fields": {
+"name": "Kevin Keegan",
+"position": "Forward",
+"nationality": "England",
+"info": "Winner of three league titles for Liverpool, as well as the European Cup and UEFA Cup, Kevin Keegan was one of the first English players to assume the mantle of global superstar. Originally a midfielder, his talents on the ball prompted the Liverpool manager to move him up front, where he began a fruitful partnership with John Toshack that netted Liverpool one of its most successful eras ever.",
+"goals": 204,
+"international_caps": 63,
+"shirt_number": 7,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663183557/jsnuh0n5lt5prtartnhh.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  2,
+  14
+]
+}
+},
+{
+"model": "players.player",
+"pk": 38,
+"fields": {
+"name": "Lilian Thuram",
+"position": "Defender",
+"nationality": "France",
+"info": "The most-capped French player ever, Thuram could play on the right as well as the center of the back four. For France, he won the '98 World Cup, quickly followed by the 2000 European title, being part of the first team to ever do so.  He made his name at Parma, winning the UEFA cup, before sold to Juventus following the sale of Zinedine Zidane. He won four Scudetti with Juventus (two revoked) before moving on to Barcelona in the wake of Calciopoli. Now, Thuram fights racism.",
+"goals": 10,
+"international_caps": 142,
+"shirt_number": 4,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663183662/lmv94jzajmafwqv8shee.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  4,
+  6
+]
+}
+},
+{
+"model": "players.player",
+"pk": 39,
+"fields": {
+"name": "Oliver Kahn",
+"position": "Goalkeeper",
+"nationality": "Germany",
+"info": "A formidable, intimidating goalie, Kahn boasts an incredible record of success, having won eight German championships, six German cups, the UEFA Cup, the UEFA Champions League and the Intercontinental Cup. He would be designated the best European goalie for four consecutive seasons, three IFFHS World's Best Goalkeeper of the Year awards the Golden Ball at the 2002 FIFA World Cup and two German Footballer of the Year trophies. King Kahn would make 429 appearances for Bayern in all.",
+"goals": 0,
+"international_caps": 86,
+"shirt_number": 1,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663183722/pz05szfsfldrcgze9qnm.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  11
+]
+}
+},
+{
+"model": "players.player",
+"pk": 40,
+"fields": {
+"name": "George Weah",
+"position": "Forward",
+"nationality": "Liberia",
+"info": "A forward of exceptional pace and talent, Weah is the only African to have to win FIFA World Player of the Year, an award accompanied by the Ballon D’Or, European Footballer of the Year and African Footballer of the Year. He won the French league with PSG and two scudetti with Milan.",
+"goals": 194,
+"international_caps": 75,
+"shirt_number": 10,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663183788/uof60bkzciggl7bne7we.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  15,
+  12,
+  13,
+  7
+]
+}
+},
+{
+"model": "players.player",
+"pk": 41,
+"fields": {
+"name": "John Charles",
+"position": "Forward",
+"nationality": "Wales",
+"info": "Nicknamed “The Gentle Giant” for his stature and mellow attitude—Charles never received a yellow card in his entire career—John Charles became one of the few British imports to thrive in the Serie A. Given his world-class ability and range as both a center forward and a center back, Charles would win three Scudetti for Juventus, paired against the mercurial Omar Sivori, and cemented his status as one of the all-time great Welsh players.",
+"goals": 370,
+"international_caps": 38,
+"shirt_number": 9,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663183862/nuwnry0avr9gyqi972st.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  18,
+  4
+]
+}
+},
+{
+"model": "players.player",
+"pk": 42,
+"fields": {
+"name": "Ruud Gullit",
+"position": "Everywhere",
+"nationality": "Netherlands",
+"info": "Gullit was a versatile player, bulky but balanced,  with a poise that rendered him unerring in the penalty box. He broke out at PSV, scoring 46 goals in 68 league appearances and earning his first World Player of the Year award.  Silvio Berlusconi shelled out a then world record price to bring Gullit to AC Milan where he, Van Basten and Rijkaard would lead the rossoneri to a half-decade of dominance at home and abroad, collecting three Scudetti and two European championships.",
+"goals": 174,
+"international_caps": 66,
+"shirt_number": 10,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663183936/qmzjm4y43tkfahbusx5b.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  12,
+  15
+]
+}
+},
+{
+"model": "players.player",
+"pk": 43,
+"fields": {
+"name": "Edgar Davids",
+"position": "Midfielder",
+"nationality": "Netherlands",
+"info": "Hands down the greatest midfield boss ever. Nicknamed “The Pitbull” by Louis van Gaal, Davids combined daring ball skills with a take-no-prisoners manhandling of the field. Davids won three Eredivisie with Ajax, three Scudetti with Juventus and a Champions league trophy in 1995. Also, the most visually arresting player, given his Predator-like dreads and those goggles (to protect his eyes after glaucoma surgery).",
+"goals": 32,
+"international_caps": 74,
+"shirt_number": 7,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663184015/du2b11dagj4pvfhheghp.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  4,
+  6,
+  8,
+  10,
+  12,
+  16
+]
+}
+},
+{
+"model": "players.player",
+"pk": 44,
+"fields": {
+"name": "Patrick Kluivert",
+"position": "Forward",
+"nationality": "Netherlands",
+"info": "The “Dutch Ronaldo,” for his speed and a nimbleness at odds with his stature Kluivert, leads the Netherlands in most goals scored at 40. While at Ajax, he cam of the bench in the Champions League Final to score and seal the club’s win over Milan. He would enjoy the heart of his success at Barcelona, winning La Liga and score 90 goals out of 180 appearances.",
+"goals": 149,
+"international_caps": 79,
+"shirt_number": 9,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663184074/tqueihh3dfk7ocjlfwuu.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  8,
+  2,
+  12,
+  6
+]
+}
+},
+{
+"model": "players.player",
+"pk": 45,
+"fields": {
+"name": "Gianluigi Buffon",
+"position": "Goalkeeper",
+"nationality": "Italy",
+"info": "Gianluigi Buffon is considered as one of the best goalkeepers in the world. He is the captain of his local team, ‘Juventus,’ and also served as the captain of the Italian national football team, until his retirement in 2017. Buffon is one of the most well-known players in the international football scene and has played in more than 1000 games, including 170 international outings. He is known among his teammates as a motivator and a man with a great understanding of the game.",
+"goals": 0,
+"international_caps": 176,
+"shirt_number": 1,
+"image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663184147/xyy6ndqtxy6g5ebecuy3.jpg",
+"image_2": "",
+"image_3": "",
+"clubs": [
+  4,
+  7
+]
+}
 }
 ]

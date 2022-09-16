@@ -41,7 +41,7 @@ const Login = () => {
       <Form onSubmit={onSubmit} className='login-form'>
         <h1>Login</h1>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>User Name</Form.Label>
+          <Form.Label>Email</Form.Label>
           <Form.Control type='text' name='email' placeholder='Email' onChange={handleChange} value={loginData.email} />   
         </Form.Group>
 

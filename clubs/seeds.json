@@ -1,149 +1,254 @@
 [
-{
-  "model": "clubs.club",
-  "pk": 1,
-  "fields": {
-    "name": "Blackburn Rovers"
+  {
+    "model": "clubs.club",
+    "pk": 1,
+    "fields": {
+      "name": "Blackburn Rovers",
+      "image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663239375/bwomnjvouagislnp6fqr.png",
+      "image_2": "",
+      "image_3": "",
+      "country": "England",
+      "stadium": "Ewood Park",
+      "stadium_capacity": 31367,
+      "info": ""
+    }
+  },
+  {
+    "model": "clubs.club",
+    "pk": 2,
+    "fields": {
+      "name": "Newcastle United",
+      "image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663239351/pwc2ji2jnq5wn2z6fw8m.png",
+      "image_2": "",
+      "image_3": "",
+      "country": "England",
+      "stadium": "St James Park",
+      "stadium_capacity": 52405,
+      "info": ""
+    }
+  },
+  {
+    "model": "clubs.club",
+    "pk": 3,
+    "fields": {
+      "name": "Real Madrid CF",
+      "image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663239044/vtvmtlahntmnwv1h0ppf.png",
+      "image_2": "",
+      "image_3": "",
+      "country": "Spain",
+      "stadium": "Santiago Bernabeu",
+      "stadium_capacity": 81044,
+      "info": ""
+    }
+  },
+  {
+    "model": "clubs.club",
+    "pk": 4,
+    "fields": {
+      "name": "Juventus",
+      "image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663238988/otvfxv1xpauuopttzwk0.png",
+      "image_2": "",
+      "image_3": "",
+      "country": "Italy",
+      "stadium": "Allianz Stadium",
+      "stadium_capacity": 41507,
+      "info": ""
+    }
+  },
+  {
+    "model": "clubs.club",
+    "pk": 5,
+    "fields": {
+      "name": "Napoli",
+      "image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663238913/hilvmqgpyucwpqyemids.png",
+      "image_2": "",
+      "image_3": "",
+      "country": "Italy",
+      "stadium": "Diego Armando Maradona Stadium",
+      "stadium_capacity": 54726,
+      "info": ""
+    }
+  },
+  {
+    "model": "clubs.club",
+    "pk": 6,
+    "fields": {
+      "name": "FC Barcelona",
+      "image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663184974/h48tnxlwmluvnjefxi55.webp",
+      "image_2": "",
+      "image_3": "",
+      "country": "Spain",
+      "stadium": "Spotify Camp Nou",
+      "stadium_capacity": 99354,
+      "info": ""
+    }
+  },
+  {
+    "model": "clubs.club",
+    "pk": 7,
+    "fields": {
+      "name": "Paris St Germain",
+      "image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663184930/da39t7gpoqs9fakecaf9.webp",
+      "image_2": "",
+      "image_3": "",
+      "country": "France",
+      "stadium": "Parc de Princes",
+      "stadium_capacity": 47929,
+      "info": ""
+    }
+  },
+  {
+    "model": "clubs.club",
+    "pk": 8,
+    "fields": {
+      "name": "Ajax Amsterdam",
+      "image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663184882/sxntizek4ndskwlmeieo.png",
+      "image_2": "",
+      "image_3": "",
+      "country": "Netherlands",
+      "stadium": "Johan Cruyff ArenA",
+      "stadium_capacity": 55865,
+      "info": ""
+    }
+  },
+  {
+    "model": "clubs.club",
+    "pk": 9,
+    "fields": {
+      "name": "Manchester United",
+      "image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663184812/t6kpx84dxdsfqcvoh0hv.webp",
+      "image_2": "",
+      "image_3": "",
+      "country": "England",
+      "stadium": "Old Trafford",
+      "stadium_capacity": 74879,
+      "info": ""
+    }
+  },
+  {
+    "model": "clubs.club",
+    "pk": 10,
+    "fields": {
+      "name": "Inter Milan",
+      "image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663184720/iwfmi430p4qu33l2bule.png",
+      "image_2": "",
+      "image_3": "",
+      "country": "Italy",
+      "stadium": "San Siro",
+      "stadium_capacity": 80018,
+      "info": ""
+    }
+  },
+  {
+    "model": "clubs.club",
+    "pk": 11,
+    "fields": {
+      "name": "Bayern Munich",
+      "image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663184646/el34bkm2cds0uzantohk.webp",
+      "image_2": "",
+      "image_3": "",
+      "country": "Germany",
+      "stadium": "Allianz Arena Munich",
+      "stadium_capacity": 75024,
+      "info": ""
+    }
+  },
+  {
+    "model": "clubs.club",
+    "pk": 12,
+    "fields": {
+      "name": "AC Milan",
+      "image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663184602/jyz872ebfjwmpbbmaxjw.webp",
+      "image_2": "",
+      "image_3": "",
+      "country": "Italy",
+      "stadium": "San Siro",
+      "stadium_capacity": 80018,
+      "info": ""
+    }
+  },
+  {
+    "model": "clubs.club",
+    "pk": 13,
+    "fields": {
+      "name": "Manchester City",
+      "image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663184554/re1vcnblnlteenjgk9rr.webp",
+      "image_2": "",
+      "image_3": "",
+      "country": "England",
+      "stadium": "Etihad Stadium",
+      "stadium_capacity": 55097,
+      "info": ""
+    }
+  },
+  {
+    "model": "clubs.club",
+    "pk": 14,
+    "fields": {
+      "name": "Liverpool",
+      "image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663184498/qiljal2bxysctect7lnv.jpg",
+      "image_2": "",
+      "image_3": "",
+      "country": "England",
+      "stadium": "Anfield",
+      "stadium_capacity": 53394,
+      "info": ""
+    }
+  },
+  {
+    "model": "clubs.club",
+    "pk": 15,
+    "fields": {
+      "name": "Chelsea",
+      "image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663184423/elioyckqaqtjjwdkggn1.webp",
+      "image_2": "",
+      "image_3": "",
+      "country": "England",
+      "stadium": "Stamford Bridge",
+      "stadium_capacity": 41837,
+      "info": ""
+    }
+  },
+  {
+    "model": "clubs.club",
+    "pk": 16,
+    "fields": {
+      "name": "Tottenham Hotspur",
+      "image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663184356/ikzg7c98jgxirxdq81bb.jpg",
+      "image_2": "",
+      "image_3": "",
+      "country": "England",
+      "stadium": "Tottenham Hotspur Stadium",
+      "stadium_capacity": 62850,
+      "info": ""
+    }
+  },
+  {
+    "model": "clubs.club",
+    "pk": 17,
+    "fields": {
+      "name": "Arsenal",
+      "image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663184303/rnylazb26ledogq3lklp.webp",
+      "image_2": "",
+      "image_3": "",
+      "country": "England",
+      "stadium": "Emirates Stadium",
+      "stadium_capacity": 60260,
+      "info": ""
+    }
+  },
+  {
+    "model": "clubs.club",
+    "pk": 18,
+    "fields": {
+      "name": "Leeds United",
+      "image_1": "https://res.cloudinary.com/chrainey22/image/upload/v1663184246/dgmjqoy0czh4my4x9blk.png",
+      "image_2": "",
+      "image_3": "",
+      "country": "England",
+      "stadium": "Elland Road",
+      "stadium_capacity": 37792,
+      "info": ""
+    }
   }
-},
-{
-  "model": "clubs.club",
-  "pk": 2,
-  "fields": {
-    "name": "Southampton"
-  }
-},
-{
-  "model": "clubs.club",
-  "pk": 3,
-  "fields": {
-    "name": "Newcastle United"
-  }
-},
-{
-  "model": "clubs.club",
-  "pk": 4,
-  "fields": {
-    "name": "Real Madrid CF"
-  }
-},
-{
-  "model": "clubs.club",
-  "pk": 5,
-  "fields": {
-    "name": "Manchester United"
-  }
-},
-{
-  "model": "clubs.club",
-  "pk": 6,
-  "fields": {
-    "name": "FC Barcelona"
-  }
-},
-{
-  "model": "clubs.club",
-  "pk": 7,
-  "fields": {
-    "name": "Napoli"
-  }
-},
-{
-  "model": "clubs.club",
-  "pk": 8,
-  "fields": {
-    "name": "AC Milan"
-  }
-},
-{
-  "model": "clubs.club",
-  "pk": 9,
-  "fields": {
-    "name": "Liverpool"
-  }
-},
-{
-  "model": "clubs.club",
-  "pk": 10,
-  "fields": {
-    "name": "Arsenal"
-  }
-},
-{
-  "model": "clubs.club",
-  "pk": 11,
-  "fields": {
-    "name": "Bayern Munich"
-  }
-},
-{
-  "model": "clubs.club",
-  "pk": 12,
-  "fields": {
-    "name": "Bordeaux"
-  }
-},
-{
-  "model": "clubs.club",
-  "pk": 13,
-  "fields": {
-    "name": "Juventus"
-  }
-},
-{
-  "model": "clubs.club",
-  "pk": 14,
-  "fields": {
-    "name": "Paris St Germain"
-  }
-},
-{
-  "model": "clubs.club",
-  "pk": 15,
-  "fields": {
-    "name": "Inter Milan"
-  }
-},
-{
-  "model": "clubs.club",
-  "pk": 16,
-  "fields": {
-    "name": "Ajax"
-  }
-},
-{
-  "model": "clubs.club",
-  "pk": 17,
-  "fields": {
-    "name": "PSV Eindhoven"
-  }
-},
-{
-  "model": "clubs.club",
-  "pk": 18,
-  "fields": {
-    "name": "Boca Juniors"
-  }
-},
-{
-  "model": "clubs.club",
-  "pk": 19,
-  "fields": {
-    "name": "Sporting Lisbon"
-  }
-},
-{
-  "model": "clubs.club",
-  "pk": 20,
-  "fields": {
-    "name": "Manchester City"
-  }
-},
-{
-  "model": "clubs.club",
-  "pk": 21,
-  "fields": {
-    "name": "Aston Villa"
-  }
-}
-]
+  ]

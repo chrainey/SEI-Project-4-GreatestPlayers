@@ -29,7 +29,7 @@ class ReviewListView(APIView):
     reviews = Review.objects.all()
     print("reviews ->", reviews)
     serialized_reviews = ReviewSerializer(reviews, many=True)
-    print(serialized_reviews)
+    # print(serialized_reviews)
 
     return Response(serialized_reviews.data, status=status.HTTP_200_OK)
 
@@ -46,7 +46,7 @@ class ReviewDetailView(APIView):
     review_to_delete = self.get_review(pk)
     print("REVIEW OWNER ID ->", review_to_delete.owner)
     print("REQUEST.USER ->", request.user)
-    if review_to_delete.owner != request.user or request.user.is_superuser:
+    if review_to_delete.owner != request.user:
       raise PermissionDenied("Unauthorised")
     review_to_delete.delete()
     return Response(status=status.HTTP_204_NO_CONTENT)

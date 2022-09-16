@@ -15,8 +15,11 @@ const Filters = ({ filters, setFilters, players, setFilteredPlayers }) => {
 
     const regexSearch = new RegExp(filters.search, 'i')
     const filteredArray = players.filter(player => {
-      return regexSearch.test(player.name) && (player.nationality === filters.nationality || filters.nationality === 'All')
-      || (player.position === filters.position || filters.position === 'All')
+      console.log(regexSearch.test(player.name))
+      console.log((player.nationality === filters.nationality || filters.nationality === 'All'))
+      console.log((player.position === filters.position || filters.position === 'All'))
+      return regexSearch.test(player.name) && ( (player.nationality === filters.nationality || filters.nationality === 'All')
+      &&  (player.position === filters.position || filters.position === 'All'))
     })
     console.log(filteredArray)
     setFilteredPlayers(filteredArray)
@@ -34,7 +37,7 @@ const Filters = ({ filters, setFilters, players, setFilteredPlayers }) => {
         <option value="All">All Nationalities</option>
         { nations.map(nationality => <option key={nationality} value={nationality}>{nationality}</option>)}
       </select>
-      <select onChange={handleChange} name="position" value={filters.nationality}>
+      <select onChange={handleChange} name="position" value={filters.position}>
         <option value="All">All Positions</option>
         { positions.map(position => <option key={position} value={position}>{position}</option>)}
       </select>

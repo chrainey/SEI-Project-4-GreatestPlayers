@@ -122,6 +122,10 @@
   margin: 0 auto;
 }
 
+.review-container {
+  margin: 0 auto;
+}
+
 .player-page {
   background-image: linear-gradient(rgba(219,233,244,0.5), rgba(219,233,244,0.5)), url(../img/grass.jpeg);
   
@@ -130,6 +134,8 @@
 .card-text {
   padding: 10px;
 }
+
+
 
 .review-form {
   display: flex;
@@ -144,7 +150,7 @@
 }
 
 .form-page {
-  background-image: linear-gradient(rgba(219,233,244,0.3), rgba(219,233,244,0.3));
+  background-image: url(../img/stadium.jpeg);
   padding-top: 100px;
   background-size: cover;
   display: flex;
@@ -155,16 +161,16 @@
 .register-form {
   display: flex;
   justify-content: center;
-  border: 3px solid;
+  border: 3px solid black;
   padding: 10px;
   color: antiquewhite;
   border-radius: 8px;
   background-color: rgba(0,0,0,0.5);
-  width: 30rem;
+  width: 40rem;
 }
 
 .form-login {
-  background-image: linear-gradient(rgba(219,233,244,0.3), rgba(219,233,244,0.3));
+  background-image: url(../img/stadium.jpeg);
   padding-top: 100px;
   background-size: cover;
   display: flex;
@@ -182,7 +188,7 @@
 }
 
 .add-review-page {
-  background-image: linear-gradient(rgba(219,233,244,0.3), rgba(219,233,244,0.3));
+  background-image: linear-gradient(rgba(219,233,244,0.3), rgba(219,233,244,0.3)) url(../img/stadium.jpeg);
   padding-top: 100px;
   background-size: cover;
   display: flex;

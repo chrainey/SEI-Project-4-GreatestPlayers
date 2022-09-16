@@ -18,6 +18,7 @@ const AllPlayers = () => {
   const [ filteredPlayers, setFilteredPlayers ] = useState([])
   const [ filters, setFilters ] = useState({
     nationality: 'All',
+    position: 'All',
     search: '',
   })
   
@@ -56,7 +57,7 @@ const AllPlayers = () => {
             </div>
             <div className="row">
               {
-                filteredPlayers.map(player => {
+                (filteredPlayers.length > 0 ? filteredPlayers : players).map(player => {
                   return <Customcard key={player.name} {...player} />
                 })
               }
