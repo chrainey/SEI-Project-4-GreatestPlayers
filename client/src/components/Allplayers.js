@@ -1,10 +1,6 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { Container } from 'react-bootstrap'
-import Card from 'react-bootstrap/Card'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import { Link } from 'react-router-dom'
 import Spinner from './Spinner'
 import Filters from '../helpers/Filters'
 import Customcard from '../helpers/Customcard'
@@ -26,7 +22,7 @@ const AllPlayers = () => {
     
     const getData = async () => {
       try {
-        const { data } = await axios.get('/api/players')
+        const { data } = await axios.get('/api/players/')
         setPlayerData(data)
       } catch (error) {
         console.log(error)

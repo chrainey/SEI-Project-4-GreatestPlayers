@@ -16,7 +16,7 @@ const AllClubs = () => {
     
     const getData = async () => {
       try {
-        const { data } = await axios.get('/api/clubs')
+        const { data } = await axios.get('/api/clubs/')
         setClubData(data)
       } catch (error) {
         console.log(error)

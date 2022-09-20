@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7b5fd073.css",
+    "main.js": "/static/js/main.e64c5be7.js",
+    "static/media/grass.jpeg": "/static/media/grass.1773631c726a77aa90b5.jpeg",
+    "static/media/stadium.jpeg": "/static/media/stadium.fe64039f48ae2fc1efc0.jpeg",
+    "static/media/footyspinner.gif": "/static/media/footyspinner.f9668cd740b6d6950bf4.gif",
+    "index.html": "/index.html",
+    "main.7b5fd073.css.map": "/static/css/main.7b5fd073.css.map",
+    "main.e64c5be7.js.map": "/static/js/main.e64c5be7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b5fd073.css",
+    "static/js/main.e64c5be7.js"
+  ]
+}
