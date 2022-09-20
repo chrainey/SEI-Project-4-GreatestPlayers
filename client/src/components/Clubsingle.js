@@ -19,7 +19,7 @@ const Club = () => {
         const { data } = await axios.get(`/api/clubs/${ clubId }/`)
         setclub(data)
         
-        console.log(data)
+        
       } catch (err) {
         setErrors(true)
       }
