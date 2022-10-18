@@ -21,9 +21,7 @@ const Images = () => {
     })
     
   }
-
-
-
+  
   return (
     <div>
       <input

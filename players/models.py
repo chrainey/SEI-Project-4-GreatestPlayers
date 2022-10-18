@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+
 class Player(models.Model):
   name = models.CharField(max_length=100, default=None)
   position = models.CharField(max_length=50, default=None)

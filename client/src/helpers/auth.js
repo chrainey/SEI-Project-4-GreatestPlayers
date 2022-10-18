@@ -22,14 +22,12 @@ export const getPayLoad = () => {
   if (splitToken.length !== 3) return 
   return JSON.parse(Buffer.from(splitToken[1], 'base64'))
 }
-
 export const userIsAuthenticated = () => {
   const payload = getPayLoad()
   if (!payload) return 
   const currentTime = Math.round(Date.now() / 1000) 
   return currentTime < payload.exp
 }
-
 export const userIsOwner = (item) => {
   const payload = getPayLoad()
   if (!payload) return

@@ -14,6 +14,7 @@ import Playersingle from './components/Playersingle'
 import AllClubs from './components/Allclubs'
 import Clubsingle from './components/Clubsingle'
 import Review from './helpers/Review'
+import EditReview from './helpers/EditReview'
 
 
 function App() {
@@ -30,8 +31,10 @@ function App() {
           <Route path="/clubs/:clubId/" element={<Clubsingle />}  />
           <Route path="/images" element={<Images />} />
           <Route path='/review/:playerId/' element={<Review /> } />
+          <Route path='/editreview/:playerId/:reviewId' element={<EditReview /> } />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+
         </Routes>
         <Footer />
       </BrowserRouter>

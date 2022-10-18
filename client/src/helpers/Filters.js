@@ -2,7 +2,6 @@ import { useEffect } from 'react'
 
 const Filters = ({ filters, setFilters, players, setFilteredPlayers }) => {
 
-  
   const handleChange = (event) => {
     const newObj = {
       ...filters,
@@ -10,7 +9,6 @@ const Filters = ({ filters, setFilters, players, setFilteredPlayers }) => {
     }
     setFilters(newObj)
   }
-
   useEffect(() => {
 
     const regexSearch = new RegExp(filters.search, 'i')

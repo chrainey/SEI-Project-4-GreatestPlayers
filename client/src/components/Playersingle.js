@@ -47,7 +47,7 @@ const Player = () => {
       
       navigate(`/players/${ playerId }`)
     } catch (err) {
-      console.log(err) 
+      setErrors(err) 
     }
   }
 
@@ -98,7 +98,7 @@ const Player = () => {
                       { userIsOwner(review) && 
                         <div className="buttons mb-4">
                           <Button variant="danger" name = {review.id} onClick={deleteReview}>Delete Review</Button>
-                          {/* <Link to={'/players'} className='btn btn-primary'>Edit Review</Link> */}
+                          <Link to={`/editreview/${ playerId }/${ review.id }/`} className='btn btn-primary'>Edit Review</Link>
                         </div> 
                       }                         
                     </Card>

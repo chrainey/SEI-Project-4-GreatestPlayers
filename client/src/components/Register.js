@@ -8,9 +8,7 @@ import Button from 'react-bootstrap/Button'
 import { setId, setToken } from '../helpers/auth'
 
 const Register = () => {
-
   const navigate = useNavigate()
-
   const [ formData, setFormData ] = useState({
     email: '',
     username: '',
@@ -29,9 +27,7 @@ const Register = () => {
     if (event.target.name === 'username' || event.target.name === 'password') {
       setLoginData({ ...loginData, [event.target.name]: event.target.value })
     }
-    // setErrors({ ...errors, [event.target.name]: '', message: '' })
   }
-
   const handleSubmit = async (event) => {
     event.preventDefault()
     try {
@@ -40,7 +36,6 @@ const Register = () => {
       autoLogin()
     } catch (error) {
       console.log(error)
-      // setErrors({...errors, [event.target.name]: '', message: '' })
     }
   }
 

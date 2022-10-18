@@ -11,6 +11,7 @@ const Review = () => {
 
   const navigate = useNavigate()
   const { playerId } = useParams()
+  
 
   const [ review, setReview ] = useState(
     {
